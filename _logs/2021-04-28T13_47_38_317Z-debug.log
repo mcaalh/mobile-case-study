@@ -1,0 +1,107 @@
+0 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'i' ]
+1 info using npm@7.10.0
+2 info using node@v16.0.0
+3 timing npm:load:whichnode Completed in 1ms
+4 timing config:load:defaults Completed in 1ms
+5 timing config:load:file:/usr/local/lib/node_modules/npm/npmrc Completed in 0ms
+6 timing config:load:builtin Completed in 0ms
+7 timing config:load:cli Completed in 2ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:file:/Volumes/saveBefore/_dev/EatCala/case-study/.npmrc Completed in 0ms
+10 timing config:load:project Completed in 1ms
+11 timing config:load:file:/Users/bool/.npmrc Completed in 1ms
+12 timing config:load:user Completed in 1ms
+13 timing config:load:file:/usr/local/etc/npmrc Completed in 0ms
+14 timing config:load:global Completed in 0ms
+15 timing config:load:validate Completed in 0ms
+16 timing config:load:setEnvs Completed in 1ms
+17 timing config:load Completed in 6ms
+18 timing npm:load:configload Completed in 6ms
+19 timing npm:load:setTitle Completed in 13ms
+20 timing npm:load:setupLog Completed in 1ms
+21 timing npm:load:cleanupLog Completed in 2ms
+22 timing npm:load:configScope Completed in 0ms
+23 timing npm:load:projectScope Completed in 0ms
+24 timing npm:load Completed in 23ms
+25 timing config:load:flatten Completed in 2ms
+26 timing arborist:ctor Completed in 1ms
+27 timing idealTree:init Completed in 514ms
+28 timing idealTree:userRequests Completed in 0ms
+29 silly idealTree buildDeps
+30 silly fetch manifest @babel/core@7.6.2
+31 http fetch GET 200 https://registry.npmjs.org/@babel%2fcore 145ms
+32 silly fetch manifest eslint-config-airbnb@18.0.1
+33 http fetch GET 304 https://registry.npmjs.org/eslint-config-airbnb 47ms (from cache)
+34 silly fetch manifest eslint@6.8.0
+35 http fetch GET 304 https://registry.npmjs.org/eslint 52ms (from cache)
+36 silly fetch manifest eslint-plugin-import@2.19.1
+37 http fetch GET 304 https://registry.npmjs.org/eslint-plugin-import 51ms (from cache)
+38 silly fetch manifest eslint-plugin-jsx-a11y@6.2.3
+39 http fetch GET 304 https://registry.npmjs.org/eslint-plugin-jsx-a11y 42ms (from cache)
+40 silly fetch manifest eslint-plugin-react@7.17.0
+41 http fetch GET 304 https://registry.npmjs.org/eslint-plugin-react 56ms (from cache)
+42 silly fetch manifest eslint-plugin-react-hooks@1.7.0
+43 http fetch GET 304 https://registry.npmjs.org/eslint-plugin-react-hooks 57ms (from cache)
+44 silly fetch manifest eslint-config-prettier@6.9.0
+45 http fetch GET 304 https://registry.npmjs.org/eslint-config-prettier 47ms (from cache)
+46 silly fetch manifest eslint-plugin-prettier@3.1.2
+47 http fetch GET 304 https://registry.npmjs.org/eslint-plugin-prettier 55ms (from cache)
+48 silly fetch manifest prettier@1.19.1
+49 http fetch GET 304 https://registry.npmjs.org/prettier 31ms (from cache)
+50 silly fetch manifest @apollo/client@3.1.3
+51 http fetch GET 200 https://registry.npmjs.org/@apollo%2fclient 97ms
+52 silly fetch manifest graphql@14.5.8
+53 http fetch GET 200 https://registry.npmjs.org/graphql 49ms
+54 silly fetch manifest react@16.9.0
+55 http fetch GET 304 https://registry.npmjs.org/react 56ms (from cache)
+56 silly fetch manifest subscriptions-transport-ws@^0.9.0
+57 http fetch GET 200 https://registry.npmjs.org/subscriptions-transport-ws 55ms
+58 silly fetch manifest @apollo/react-hooks@3.1.3
+59 http fetch GET 304 https://registry.npmjs.org/@apollo%2freact-hooks 87ms (from cache)
+60 silly fetch manifest @types/react@^16.8.0
+61 http fetch GET 200 https://registry.npmjs.org/@types%2freact 68ms
+62 silly fetch manifest apollo-client@^2.6.4
+63 http fetch GET 200 https://registry.npmjs.org/apollo-client 95ms
+64 silly fetch manifest react-dom@^16.8.0
+65 http fetch GET 200 https://registry.npmjs.org/react-dom 58ms
+66 timing idealTree Completed in 1731ms
+67 timing command:install Completed in 1739ms
+68 verbose stack Error: unable to resolve dependency tree
+68 verbose stack     at Arborist.[failPeerConflict] (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:1210:25)
+68 verbose stack     at Arborist.[loadPeerSet] (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:1203:30)
+68 verbose stack     at Arborist.[nodeFromEdge] (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:986:30)
+68 verbose stack     at async Arborist.[loadPeerSet] (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:1163:11)
+68 verbose stack     at async Arborist.[buildDepStep] (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:891:11)
+68 verbose stack     at async Arborist.buildIdealTree (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:217:7)
+68 verbose stack     at async Promise.all (index 1)
+68 verbose stack     at async Arborist.reify (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:134:5)
+68 verbose stack     at async Install.install (/usr/local/lib/node_modules/npm/lib/install.js:137:5)
+69 verbose cwd /Volumes/saveBefore/_dev/EatCala/case-study
+70 verbose Darwin 20.3.0
+71 verbose argv "/usr/local/bin/node" "/usr/local/bin/npm" "i"
+72 verbose node v16.0.0
+73 verbose npm  v7.10.0
+74 error code ERESOLVE
+75 error ERESOLVE unable to resolve dependency tree
+76 error
+77 error While resolving: [1mcala[22m@[1m0.0.1[22m
+77 error Found: [1mreact[22m@[1m16.9.0[22m[2m[22m
+77 error [2mnode_modules/react[22m
+77 error   [1mreact[22m@"[1m16.9.0[22m" from the root project
+77 error   [35mpeer[39m [1mreact[22m@"[1m^16.8.0[22m" from [1m@apollo/react-hooks[22m@[1m3.1.3[22m[2m[22m
+77 error   [2mnode_modules/@apollo/react-hooks[22m
+77 error     [1m@apollo/react-hooks[22m@"[1m3.1.3[22m" from the root project
+77 error
+77 error Could not resolve dependency:
+77 error [35mpeer[39m [1mreact[22m@"[1m^16.14.0[22m" from [1mreact-dom[22m@[1m16.14.0[22m[2m[22m
+77 error [2mnode_modules/react-dom[22m
+77 error   [35mpeer[39m [1mreact-dom[22m@"[1m^16.8.0[22m" from [1m@apollo/react-hooks[22m@[1m3.1.3[22m[2m[22m
+77 error   [2mnode_modules/@apollo/react-hooks[22m
+77 error     [1m@apollo/react-hooks[22m@"[1m3.1.3[22m" from the root project
+77 error
+77 error Fix the upstream dependency conflict, or retry
+77 error this command with --force, or --legacy-peer-deps
+77 error to accept an incorrect (and potentially broken) dependency resolution.
+77 error
+77 error See /Volumes/saveBefore/_dev/EatCala/case-study/eresolve-report.txt for a full report.
+78 verbose exit 1

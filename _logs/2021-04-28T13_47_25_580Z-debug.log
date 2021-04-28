@@ -1,0 +1,96 @@
+0 verbose cli [
+0 verbose cli   '/usr/local/bin/node',
+0 verbose cli   '/usr/local/bin/npm',
+0 verbose cli   'ls',
+0 verbose cli   '--depth',
+0 verbose cli   '0',
+0 verbose cli   '--json'
+0 verbose cli ]
+1 info using npm@7.10.0
+2 info using node@v16.0.0
+3 timing npm:load:whichnode Completed in 1ms
+4 timing config:load:defaults Completed in 1ms
+5 timing config:load:file:/usr/local/lib/node_modules/npm/npmrc Completed in 1ms
+6 timing config:load:builtin Completed in 1ms
+7 timing config:load:cli Completed in 2ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:file:/Volumes/saveBefore/_dev/EatCala/case-study/.npmrc Completed in 0ms
+10 timing config:load:project Completed in 1ms
+11 timing config:load:file:/Users/bool/.npmrc Completed in 1ms
+12 timing config:load:user Completed in 1ms
+13 timing config:load:file:/usr/local/etc/npmrc Completed in 0ms
+14 timing config:load:global Completed in 0ms
+15 timing config:load:validate Completed in 1ms
+16 timing config:load:setEnvs Completed in 1ms
+17 timing config:load Completed in 8ms
+18 timing npm:load:configload Completed in 8ms
+19 timing npm:load:setTitle Completed in 17ms
+20 timing npm:load:setupLog Completed in 0ms
+21 timing npm:load:cleanupLog Completed in 1ms
+22 timing npm:load:configScope Completed in 0ms
+23 timing npm:load:projectScope Completed in 1ms
+24 timing npm:load Completed in 29ms
+25 timing config:load:flatten Completed in 2ms
+26 timing arborist:ctor Completed in 1ms
+27 timing arborist:ctor Completed in 0ms
+28 timing command:ls Completed in 629ms
+29 verbose stack Error: invalid: @apollo/client@3.3.15 /Volumes/saveBefore/_dev/EatCala/case-study/node_modules/@apollo/client
+29 verbose stack invalid: @apollo/react-hooks@3.1.5 /Volumes/saveBefore/_dev/EatCala/case-study/node_modules/@apollo/react-hooks
+29 verbose stack invalid: @babel/core@7.13.16 /Volumes/saveBefore/_dev/EatCala/case-study/node_modules/@babel/core
+29 verbose stack invalid: @react-native-community/async-storage@1.12.1 /Volumes/saveBefore/_dev/EatCala/case-study/node_modules/@react-native-community/async-storage
+29 verbose stack invalid: @react-native-community/clipboard@1.5.1 /Volumes/saveBefore/_dev/EatCala/case-study/node_modules/@react-native-community/clipboard
+29 verbose stack invalid: @react-native-community/masked-view@0.1.11 /Volumes/saveBefore/_dev/EatCala/case-study/node_modules/@react-native-community/masked-view
+29 verbose stack invalid: dayjs@1.10.4 /Volumes/saveBefore/_dev/EatCala/case-study/node_modules/dayjs
+29 verbose stack invalid: eslint-config-airbnb@18.2.1 /Volumes/saveBefore/_dev/EatCala/case-study/node_modules/eslint-config-airbnb
+29 verbose stack invalid: eslint-config-prettier@6.15.0 /Volumes/saveBefore/_dev/EatCala/case-study/node_modules/eslint-config-prettier
+29 verbose stack invalid: eslint-plugin-import@2.22.1 /Volumes/saveBefore/_dev/EatCala/case-study/node_modules/eslint-plugin-import
+29 verbose stack invalid: eslint-plugin-jsx-a11y@6.4.1 /Volumes/saveBefore/_dev/EatCala/case-study/node_modules/eslint-plugin-jsx-a11y
+29 verbose stack invalid: eslint-plugin-prettier@3.4.0 /Volumes/saveBefore/_dev/EatCala/case-study/node_modules/eslint-plugin-prettier
+29 verbose stack invalid: eslint-plugin-react@7.23.2 /Volumes/saveBefore/_dev/EatCala/case-study/node_modules/eslint-plugin-react
+29 verbose stack invalid: graphql@14.7.0 /Volumes/saveBefore/_dev/EatCala/case-study/node_modules/graphql
+29 verbose stack invalid: react-native-device-info@5.6.5 /Volumes/saveBefore/_dev/EatCala/case-study/node_modules/react-native-device-info
+29 verbose stack invalid: react-native-fast-image@8.3.4 /Volumes/saveBefore/_dev/EatCala/case-study/node_modules/react-native-fast-image
+29 verbose stack invalid: react-native-gesture-handler@1.10.3 /Volumes/saveBefore/_dev/EatCala/case-study/node_modules/react-native-gesture-handler
+29 verbose stack invalid: react-native-modal@11.10.0 /Volumes/saveBefore/_dev/EatCala/case-study/node_modules/react-native-modal
+29 verbose stack invalid: react-native-pure-jwt@2.2.2 /Volumes/saveBefore/_dev/EatCala/case-study/node_modules/react-native-pure-jwt
+29 verbose stack invalid: react-native-safe-area-context@3.2.0 /Volumes/saveBefore/_dev/EatCala/case-study/node_modules/react-native-safe-area-context
+29 verbose stack invalid: react-native-screens@2.18.1 /Volumes/saveBefore/_dev/EatCala/case-study/node_modules/react-native-screens
+29 verbose stack invalid: react-native-webview@10.10.2 /Volumes/saveBefore/_dev/EatCala/case-study/node_modules/react-native-webview
+29 verbose stack invalid: react-navigation-stack@2.10.4 /Volumes/saveBefore/_dev/EatCala/case-study/node_modules/react-navigation-stack
+29 verbose stack invalid: react-navigation@4.4.4 /Volumes/saveBefore/_dev/EatCala/case-study/node_modules/react-navigation
+29 verbose stack invalid: styled-components@5.2.3 /Volumes/saveBefore/_dev/EatCala/case-study/node_modules/styled-components
+29 verbose stack invalid: tipsi-stripe@8.0.2 /Volumes/saveBefore/_dev/EatCala/case-study/node_modules/tipsi-stripe
+29 verbose stack     at LS.ls (/usr/local/lib/node_modules/npm/lib/ls.js:171:9)
+30 verbose cwd /Volumes/saveBefore/_dev/EatCala/case-study
+31 verbose Darwin 20.3.0
+32 verbose argv "/usr/local/bin/node" "/usr/local/bin/npm" "ls" "--depth" "0" "--json"
+33 verbose node v16.0.0
+34 verbose npm  v7.10.0
+35 error code ELSPROBLEMS
+36 error invalid: @apollo/client@3.3.15 /Volumes/saveBefore/_dev/EatCala/case-study/node_modules/@apollo/client
+36 error invalid: @apollo/react-hooks@3.1.5 /Volumes/saveBefore/_dev/EatCala/case-study/node_modules/@apollo/react-hooks
+36 error invalid: @babel/core@7.13.16 /Volumes/saveBefore/_dev/EatCala/case-study/node_modules/@babel/core
+36 error invalid: @react-native-community/async-storage@1.12.1 /Volumes/saveBefore/_dev/EatCala/case-study/node_modules/@react-native-community/async-storage
+36 error invalid: @react-native-community/clipboard@1.5.1 /Volumes/saveBefore/_dev/EatCala/case-study/node_modules/@react-native-community/clipboard
+36 error invalid: @react-native-community/masked-view@0.1.11 /Volumes/saveBefore/_dev/EatCala/case-study/node_modules/@react-native-community/masked-view
+36 error invalid: dayjs@1.10.4 /Volumes/saveBefore/_dev/EatCala/case-study/node_modules/dayjs
+36 error invalid: eslint-config-airbnb@18.2.1 /Volumes/saveBefore/_dev/EatCala/case-study/node_modules/eslint-config-airbnb
+36 error invalid: eslint-config-prettier@6.15.0 /Volumes/saveBefore/_dev/EatCala/case-study/node_modules/eslint-config-prettier
+36 error invalid: eslint-plugin-import@2.22.1 /Volumes/saveBefore/_dev/EatCala/case-study/node_modules/eslint-plugin-import
+36 error invalid: eslint-plugin-jsx-a11y@6.4.1 /Volumes/saveBefore/_dev/EatCala/case-study/node_modules/eslint-plugin-jsx-a11y
+36 error invalid: eslint-plugin-prettier@3.4.0 /Volumes/saveBefore/_dev/EatCala/case-study/node_modules/eslint-plugin-prettier
+36 error invalid: eslint-plugin-react@7.23.2 /Volumes/saveBefore/_dev/EatCala/case-study/node_modules/eslint-plugin-react
+36 error invalid: graphql@14.7.0 /Volumes/saveBefore/_dev/EatCala/case-study/node_modules/graphql
+36 error invalid: react-native-device-info@5.6.5 /Volumes/saveBefore/_dev/EatCala/case-study/node_modules/react-native-device-info
+36 error invalid: react-native-fast-image@8.3.4 /Volumes/saveBefore/_dev/EatCala/case-study/node_modules/react-native-fast-image
+36 error invalid: react-native-gesture-handler@1.10.3 /Volumes/saveBefore/_dev/EatCala/case-study/node_modules/react-native-gesture-handler
+36 error invalid: react-native-modal@11.10.0 /Volumes/saveBefore/_dev/EatCala/case-study/node_modules/react-native-modal
+36 error invalid: react-native-pure-jwt@2.2.2 /Volumes/saveBefore/_dev/EatCala/case-study/node_modules/react-native-pure-jwt
+36 error invalid: react-native-safe-area-context@3.2.0 /Volumes/saveBefore/_dev/EatCala/case-study/node_modules/react-native-safe-area-context
+36 error invalid: react-native-screens@2.18.1 /Volumes/saveBefore/_dev/EatCala/case-study/node_modules/react-native-screens
+36 error invalid: react-native-webview@10.10.2 /Volumes/saveBefore/_dev/EatCala/case-study/node_modules/react-native-webview
+36 error invalid: react-navigation-stack@2.10.4 /Volumes/saveBefore/_dev/EatCala/case-study/node_modules/react-navigation-stack
+36 error invalid: react-navigation@4.4.4 /Volumes/saveBefore/_dev/EatCala/case-study/node_modules/react-navigation
+36 error invalid: styled-components@5.2.3 /Volumes/saveBefore/_dev/EatCala/case-study/node_modules/styled-components
+36 error invalid: tipsi-stripe@8.0.2 /Volumes/saveBefore/_dev/EatCala/case-study/node_modules/tipsi-stripe
+37 verbose exit 1

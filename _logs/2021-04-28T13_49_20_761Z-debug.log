@@ -1,0 +1,135 @@
+0 verbose cli [
+0 verbose cli   '/usr/local/bin/node',
+0 verbose cli   '/usr/local/bin/npm',
+0 verbose cli   'ls',
+0 verbose cli   '--depth',
+0 verbose cli   '0',
+0 verbose cli   '--json'
+0 verbose cli ]
+1 info using npm@7.10.0
+2 info using node@v16.0.0
+3 timing npm:load:whichnode Completed in 1ms
+4 timing config:load:defaults Completed in 1ms
+5 timing config:load:file:/usr/local/lib/node_modules/npm/npmrc Completed in 1ms
+6 timing config:load:builtin Completed in 1ms
+7 timing config:load:cli Completed in 2ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:file:/Volumes/saveBefore/_dev/EatCala/case-study/.npmrc Completed in 0ms
+10 timing config:load:project Completed in 0ms
+11 timing config:load:file:/Users/bool/.npmrc Completed in 1ms
+12 timing config:load:user Completed in 1ms
+13 timing config:load:file:/usr/local/etc/npmrc Completed in 0ms
+14 timing config:load:global Completed in 0ms
+15 timing config:load:validate Completed in 1ms
+16 timing config:load:setEnvs Completed in 0ms
+17 timing config:load Completed in 6ms
+18 timing npm:load:configload Completed in 6ms
+19 timing npm:load:setTitle Completed in 15ms
+20 timing npm:load:setupLog Completed in 0ms
+21 timing npm:load:cleanupLog Completed in 2ms
+22 timing npm:load:configScope Completed in 0ms
+23 timing npm:load:projectScope Completed in 0ms
+24 timing npm:load Completed in 24ms
+25 timing config:load:flatten Completed in 2ms
+26 timing arborist:ctor Completed in 1ms
+27 timing command:ls Completed in 25ms
+28 verbose stack Error: missing: @apollo/client@^3.1.3, required by cala@0.0.1
+28 verbose stack missing: @apollo/react-hooks@^3.1.3, required by cala@0.0.1
+28 verbose stack missing: @babel/core@^7.6.2, required by cala@0.0.1
+28 verbose stack missing: @babel/runtime@^7.13.17, required by cala@0.0.1
+28 verbose stack missing: @react-native-community/async-storage@^1.12.0, required by cala@0.0.1
+28 verbose stack missing: @react-native-community/clipboard@^1.2.3, required by cala@0.0.1
+28 verbose stack missing: @react-native-community/eslint-config@^0.0.5, required by cala@0.0.1
+28 verbose stack missing: @react-native-community/masked-view@^0.1.10, required by cala@0.0.1
+28 verbose stack missing: @twotalltotems/react-native-otp-input@^1.3.11, required by cala@0.0.1
+28 verbose stack missing: babel-jest@^24.9.0, required by cala@0.0.1
+28 verbose stack missing: dayjs@^1.8.28, required by cala@0.0.1
+28 verbose stack missing: eslint-config-airbnb@^18.0.1, required by cala@0.0.1
+28 verbose stack missing: eslint-config-prettier@^6.9.0, required by cala@0.0.1
+28 verbose stack missing: eslint-plugin-import@^2.19.1, required by cala@0.0.1
+28 verbose stack missing: eslint-plugin-jsx-a11y@^6.2.3, required by cala@0.0.1
+28 verbose stack missing: eslint-plugin-prettier@^3.1.2, required by cala@0.0.1
+28 verbose stack missing: eslint-plugin-react-hooks@^1.7.0, required by cala@0.0.1
+28 verbose stack missing: eslint-plugin-react@^7.17.0, required by cala@0.0.1
+28 verbose stack missing: eslint@^6.8.0, required by cala@0.0.1
+28 verbose stack missing: graphql@^14.5.8, required by cala@0.0.1
+28 verbose stack missing: jest@^24.9.0, required by cala@0.0.1
+28 verbose stack missing: jwt-decode@^2.2.0, required by cala@0.0.1
+28 verbose stack missing: metro-react-native-babel-preset@^0.63.0, required by cala@0.0.1
+28 verbose stack missing: prettier@^1.19.1, required by cala@0.0.1
+28 verbose stack missing: prop-types@^15.7.2, required by cala@0.0.1
+28 verbose stack missing: react-content-loader@^4.3.4, required by cala@0.0.1
+28 verbose stack missing: react-native-device-info@^5.6.3, required by cala@0.0.1
+28 verbose stack missing: react-native-fast-image@^8.3.2, required by cala@0.0.1
+28 verbose stack missing: react-native-flags@^1.0.0, required by cala@0.0.1
+28 verbose stack missing: react-native-gesture-handler@^1.5.3, required by cala@0.0.1
+28 verbose stack missing: react-native-linear-gradient@^2.5.6, required by cala@0.0.1
+28 verbose stack missing: react-native-material-textfield@git+https://github.com/eatcala/react-native-material-textfield.git, required by cala@0.0.1
+28 verbose stack missing: react-native-modal@^11.5.4, required by cala@0.0.1
+28 verbose stack missing: react-native-pure-jwt@^2.2.1, required by cala@0.0.1
+28 verbose stack missing: react-native-safe-area-context@^3.1.3, required by cala@0.0.1
+28 verbose stack missing: react-native-screens@^2.10.1, required by cala@0.0.1
+28 verbose stack missing: react-native-svg-transformer@^0.14.3, required by cala@0.0.1
+28 verbose stack missing: react-native-svg@^10.1.0, required by cala@0.0.1
+28 verbose stack missing: react-native-webview@^10.3.2, required by cala@0.0.1
+28 verbose stack missing: react-native@^0.63.2, required by cala@0.0.1
+28 verbose stack missing: react-navigation-stack@^2.8.2, required by cala@0.0.1
+28 verbose stack missing: react-navigation@^4.4.0, required by cala@0.0.1
+28 verbose stack missing: react-test-renderer@16.9.0, required by cala@0.0.1
+28 verbose stack missing: react@16.9.0, required by cala@0.0.1
+28 verbose stack missing: styled-components@^5.2.0, required by cala@0.0.1
+28 verbose stack missing: tipsi-stripe@^8.0.0-beta.10, required by cala@0.0.1
+28 verbose stack     at LS.ls (/usr/local/lib/node_modules/npm/lib/ls.js:171:9)
+29 verbose cwd /Volumes/saveBefore/_dev/EatCala/case-study
+30 verbose Darwin 20.3.0
+31 verbose argv "/usr/local/bin/node" "/usr/local/bin/npm" "ls" "--depth" "0" "--json"
+32 verbose node v16.0.0
+33 verbose npm  v7.10.0
+34 error code ELSPROBLEMS
+35 error missing: @apollo/client@^3.1.3, required by cala@0.0.1
+35 error missing: @apollo/react-hooks@^3.1.3, required by cala@0.0.1
+35 error missing: @babel/core@^7.6.2, required by cala@0.0.1
+35 error missing: @babel/runtime@^7.13.17, required by cala@0.0.1
+35 error missing: @react-native-community/async-storage@^1.12.0, required by cala@0.0.1
+35 error missing: @react-native-community/clipboard@^1.2.3, required by cala@0.0.1
+35 error missing: @react-native-community/eslint-config@^0.0.5, required by cala@0.0.1
+35 error missing: @react-native-community/masked-view@^0.1.10, required by cala@0.0.1
+35 error missing: @twotalltotems/react-native-otp-input@^1.3.11, required by cala@0.0.1
+35 error missing: babel-jest@^24.9.0, required by cala@0.0.1
+35 error missing: dayjs@^1.8.28, required by cala@0.0.1
+35 error missing: eslint-config-airbnb@^18.0.1, required by cala@0.0.1
+35 error missing: eslint-config-prettier@^6.9.0, required by cala@0.0.1
+35 error missing: eslint-plugin-import@^2.19.1, required by cala@0.0.1
+35 error missing: eslint-plugin-jsx-a11y@^6.2.3, required by cala@0.0.1
+35 error missing: eslint-plugin-prettier@^3.1.2, required by cala@0.0.1
+35 error missing: eslint-plugin-react-hooks@^1.7.0, required by cala@0.0.1
+35 error missing: eslint-plugin-react@^7.17.0, required by cala@0.0.1
+35 error missing: eslint@^6.8.0, required by cala@0.0.1
+35 error missing: graphql@^14.5.8, required by cala@0.0.1
+35 error missing: jest@^24.9.0, required by cala@0.0.1
+35 error missing: jwt-decode@^2.2.0, required by cala@0.0.1
+35 error missing: metro-react-native-babel-preset@^0.63.0, required by cala@0.0.1
+35 error missing: prettier@^1.19.1, required by cala@0.0.1
+35 error missing: prop-types@^15.7.2, required by cala@0.0.1
+35 error missing: react-content-loader@^4.3.4, required by cala@0.0.1
+35 error missing: react-native-device-info@^5.6.3, required by cala@0.0.1
+35 error missing: react-native-fast-image@^8.3.2, required by cala@0.0.1
+35 error missing: react-native-flags@^1.0.0, required by cala@0.0.1
+35 error missing: react-native-gesture-handler@^1.5.3, required by cala@0.0.1
+35 error missing: react-native-linear-gradient@^2.5.6, required by cala@0.0.1
+35 error missing: react-native-material-textfield@git+https://github.com/eatcala/react-native-material-textfield.git, required by cala@0.0.1
+35 error missing: react-native-modal@^11.5.4, required by cala@0.0.1
+35 error missing: react-native-pure-jwt@^2.2.1, required by cala@0.0.1
+35 error missing: react-native-safe-area-context@^3.1.3, required by cala@0.0.1
+35 error missing: react-native-screens@^2.10.1, required by cala@0.0.1
+35 error missing: react-native-svg-transformer@^0.14.3, required by cala@0.0.1
+35 error missing: react-native-svg@^10.1.0, required by cala@0.0.1
+35 error missing: react-native-webview@^10.3.2, required by cala@0.0.1
+35 error missing: react-native@^0.63.2, required by cala@0.0.1
+35 error missing: react-navigation-stack@^2.8.2, required by cala@0.0.1
+35 error missing: react-navigation@^4.4.0, required by cala@0.0.1
+35 error missing: react-test-renderer@16.9.0, required by cala@0.0.1
+35 error missing: react@16.9.0, required by cala@0.0.1
+35 error missing: styled-components@^5.2.0, required by cala@0.0.1
+35 error missing: tipsi-stripe@^8.0.0-beta.10, required by cala@0.0.1
+36 verbose exit 1

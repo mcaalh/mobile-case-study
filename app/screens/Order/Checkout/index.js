@@ -28,6 +28,7 @@ import {
   Title,
   TitleAndSlot,
 } from '../../../components/Order/Checkout/styles';
+import SlotList from '../../../components/Order/Checkout/SlotList';
 
 const styles = StyleSheet.create({
   icon: {
@@ -132,6 +133,7 @@ const Checkout = ({ navigation }) => {
       <Border width={dim.width} style={styles.bugFix} />
       <DishList order={order} navigation={navigation} />
       <Border width={dim.width} style={styles.bugFix} />
+      <SlotList isOpened={isPickupModalOpen} />
       <ButtonView>
         <RegularButton
           text={getButtonText()}

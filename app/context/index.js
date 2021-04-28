@@ -10,6 +10,7 @@ const initialState = {
   user: null,
   isUserNew: false,
   order: [],
+  slots: [],
   slot: null,
   card: null,
   cards: [],
@@ -69,6 +70,9 @@ const userReducer = (state, action) => {
     }
     case 'SET_ALIMENTS': {
       return { ...state, aliments: action.payload };
+    }
+    case 'SET_SLOTS': {
+      return { ...state, slots: action.payload };
     }
     case 'SET_SLOT': {
       return { ...state, slot: action.payload };
@@ -207,6 +211,21 @@ function useUserDispatch() {
     throw new Error('useUserDispatch must be used within a UserProvider');
   }
   return context;
+}
+
+function fetchSlotsDataAction(dispatch) {
+  const data = {};
+  return dispatch({
+    type: 'SET_SLOTS',
+    payload: data,
+  });
+}
+
+function addSlotAction(slot, state, dispatch) {
+  return dispatch({
+    type: 'SET_SLOT',
+    payload: slot,
+  });
 }
 
 UserProvider.propTypes = {
