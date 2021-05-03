@@ -48,8 +48,9 @@ export const CategoryName = styled.Text`
 export const Slots = styled(FlatList)`
 `;
 
-export const SlotItem = styled.View`
+export const SlotItem = styled.TouchableOpacity`
   background-color: ${props => (props.selected ? '#0C9266' : '#F2F2F2')};
+  justify-content: center
   margin-top: 10px;
   border-radius: 3px;
   width: 66px;
@@ -59,4 +60,6 @@ export const SlotItem = styled.View`
 export const SlotItemText = styled.Text`
   color: ${props => (props.selected ? '#fff' : '#BDBDBD')};
   text-align: center;
+  font-size: 16px;
+  font-weight: ${props => (props.selected ? '700' : '200')};
 `;

@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useQuery } from '@apollo/client';
-import { Text } from 'react-native';
+import { Text, View } from 'react-native';
+import PropTypes from 'prop-types';
 
-import { useUserState } from '../../../../context';
-import { GET_AVAILABLE_SLOTS } from '../../../../graphql/queries/order';
+import { useUserState, useUserDispatch } from '../../../../context';
+import { GET_SLOTS } from '../../../../graphql/queries/order';
 
 import {
   ModalContainer,
@@ -30,12 +31,18 @@ const dataHours = [
 
 const SlotList = ({ isOpened }) => {
   const { slot, slots } = useUserState();
-  const { data, error, loading } = useQuery(GET_AVAILABLE_SLOTS);
+  const [slotsData, setSlotsData] = useState([]); //TODO: change to slots
+  const [selectedCategory, setSelectedCategory] = useState();
+  const dispatch = useUserDispatch();
 
-  // let datas = data.availableSlots.json();
+  const { error, loading } = useQuery(GET_SLOTS, {
+    onCompleted: data => {
+      setSlotsData(data.slots);
+    },
+  });
 
-  const [selectedCategory, setSelectedCategory] = useState('All');
   const changeCategory = category => {
+    //TODO Change to slots hour and load the proper available slot list
     setSelectedCategory(category);
   };
 
@@ -43,6 +50,7 @@ const SlotList = ({ isOpened }) => {
     <ModalDesign animationType="slide" transparent={true} visible={isOpened}>
       <ModalContainer>
         <ModalText>À quelle heure arrives-tu? </ModalText>
+        <Text>{JSON.stringify(slotsData)}</Text>
         <Categories horizontal={true} showsHorizontalScrollIndicator={false}>
           {categoryList.map((category, index) => {
             return (
@@ -57,8 +65,15 @@ const SlotList = ({ isOpened }) => {
           data={dataHours}
           renderItem={({ item }) => {
             return (
-              <SlotItem>
-                <SlotItemText>{item.label}</SlotItemText>
+              <SlotItem
+                onPress={() =>
+                  dispatch({
+                    type: 'SET_SLOT',
+                    payload: item,
+                  })
+                }
+                selected={slot === item}>
+                <SlotItemText selected={slot === item}>{item.label}</SlotItemText>
               </SlotItem>
             );
           }}
@@ -72,6 +87,10 @@ const SlotList = ({ isOpened }) => {
       </ModalContainer>
     </ModalDesign>
   );
+};
+
+SlotList.protoTypes = {
+  isOpened: PropTypes.bool,
 };
 
 export default SlotList;

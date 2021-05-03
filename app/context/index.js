@@ -212,22 +212,6 @@ function useUserDispatch() {
   }
   return context;
 }
-
-function fetchSlotsDataAction(dispatch) {
-  const data = {};
-  return dispatch({
-    type: 'SET_SLOTS',
-    payload: data,
-  });
-}
-
-function addSlotAction(slot, state, dispatch) {
-  return dispatch({
-    type: 'SET_SLOT',
-    payload: slot,
-  });
-}
-
 UserProvider.propTypes = {
   children: PropTypes.node.isRequired,
 };
