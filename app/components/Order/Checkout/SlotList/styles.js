@@ -52,6 +52,7 @@ export const SlotItem = styled.TouchableOpacity`
   background-color: ${props => (props.selected ? '#0C9266' : '#F2F2F2')};
   justify-content: center
   margin-top: 10px;
+  margin-right: 10px;
   border-radius: 3px;
   width: 66px;
   height: 36px;
