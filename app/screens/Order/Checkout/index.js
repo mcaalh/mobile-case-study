@@ -72,9 +72,9 @@ const Checkout = ({ navigation }) => {
       } else {
         const start = dayjs(serviceHours.start).valueOf();
         const end = dayjs(serviceHours.end).valueOf();
-        console.log('start', start)
-        console.log('now', now)
-        console.log('end', end)
+        console.log('start', start);
+        console.log('now', now);
+        console.log('end', end);
 
         if (maintenance) {
           return [
@@ -85,7 +85,7 @@ const Checkout = ({ navigation }) => {
         if (start < now && end > now) {
           return [
             <Clock key="icon" style={styles.icon} />,
-            <TextSlot key="text"> {slot ? dayjs(parseInt(slot.start, 10)).format('HH:mm') : 'X:XX'} </TextSlot>,
+            <TextSlot key="text"> {slot ? dayjs(slot.start).format('HH:mm') : 'X:XX'} </TextSlot>,
           ];
         }
         if (end < now) {

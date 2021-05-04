@@ -4,7 +4,8 @@ import PropTypes from 'prop-types';
 import dayjs from 'dayjs';
 
 import { useUserState, useUserDispatch } from '../../../../context';
-import { GET_SLOTS } from '../../../../graphql/queries/order';
+import { GET_SLOTS, GET_AVAILABLE_SLOTS } from '../../../../graphql/queries/order';
+import GET_ROBOT_CONFIG from '../../../../graphql/queries/robot';
 
 import {
   ModalContainer,
@@ -56,9 +57,15 @@ const SlotList = ({ isOpened }) => {
   const [selectedCategory, setSelectedCategory] = useState();
   const dispatch = useUserDispatch();
 
-  const { data, error, loading } = useQuery(GET_SLOTS, {
-    onCompleted: () => {
-      setSlotsData(data);
+  const { data, error, loading } = useQuery(GET_AVAILABLE_SLOTS, {
+    fetchPolicy: 'network-only',
+    onCompleted({ availableSlots }) {
+      //   setSlotsData(data);
+      console.log('GET_AVAILABLE_SLOTS', JSON.stringify(data));
+      dispatch({ type: 'SET_SLOTS', payload: availableSlots });
+    },
+    onError(err) {
+      console.log('GET_SLOTS error', err);
     },
   });
 
@@ -70,15 +77,14 @@ const SlotList = ({ isOpened }) => {
     if (loading) {
       // alert(loading);
     }
-    // if (!error && !loading) {
-    //   alert(data);
-    //   setSlotsData(data.availableSlots);
-    // }
-  }, [loading, data, error, slot, slots]);
+    if (!error && !loading && data.availableSlots.length > 0) {
+      alert('no error', data);
+      setSlotsData(data.availableSlots);
+    }
+  }, [loading, data, error]);
 
   const changeCategory = category => {
     //TODO Change to slots hour and load the proper available slot list
-    // alert(category.slots);
     setSlotMinute(category.slots);
     setSelectedCategory(category);
   };
@@ -101,10 +107,12 @@ const SlotList = ({ isOpened }) => {
         </Categories>
         <Slots
           data={slotMinute}
+          keyExtractor={item => item.id}
           renderItem={({ item }) => {
             return (
               <SlotItem
                 onPress={() => {
+                  // alert(JSON.stringify(item));
                   dispatch({
                     type: 'SET_SLOT',
                     payload: item,
@@ -122,7 +130,6 @@ const SlotList = ({ isOpened }) => {
             flexDirection: 'row',
             flexWrap: 'wrap',
           }}
-          keyExtractor={({ key }) => key}
         />
       </ModalContainer>
     </ModalDesign>
